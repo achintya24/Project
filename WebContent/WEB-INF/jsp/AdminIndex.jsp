@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Register</title>
+    <title>Hello, Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,9 +51,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    
+                    <li><a href="viewuser.htm">View All Users</a></li>
+                    <li>
+                    	<a href="newWorkerform.htm">Add Worker</a>
+                    	</li>
+                    	<li><a href="viewall.htm">View All Workers</a></li>
+                    	<li><a href="viewfeedback.htm">Feed Back</a>
+                    </li>
                      
                     <li>
+                    	
                         <a href="#contact"><span class="glyphicon glyphicon-earphone" ></span>1860-123-4569 (Customer support)</a>
                     </li>
                     </ul>
@@ -70,44 +77,13 @@
 			<div class="col-md-6">
 				<h3 class="dark-grey">Registration</h3>
 				
-	<form:form action="addclientdetails.htm" commandName="user" method="post">
-			<div class="form-group col-lg-12">
-					<label>Email</label>
-					<form:input path="email" class="form-control"/>
-			</div>
-			<div class="form-group col-lg-6">
-					<label>Password</label>
-					<form:input path="password" type="password" class="form-control"/>
-				</div>
-			<div class="form-group col-lg-6">
-					<label>Full Name</label>
-					<form:input path="fullname" class="form-control"/>
-				</div>
-			<div class="form-group col-lg-6">
-					<label>Contact No</label>
-					<form:input path="contactno" class="form-control"/>
-				</div>
-			
-			<div class="form-group col-lg-6">
-					<label>Sex</label>
-					<br>
-					<label>Male</label>
-				  <form:radiobutton path="sex" value="male"></form:radiobutton>
-				  <label>Female</label>
-   				  <form:radiobutton path="sex" value="female"></form:radiobutton>  
-					 
-				</div>
-			<div class="col-sm-6">	
-				<input type="submit" value="submit" class="btn btn-primary"/>	
-			</div>
-	</form:form>
 			
 	</div>
 			
-				
+			</div>	
 				
 			
-		</div>
+
 	</section>
 </div>
 <hr>

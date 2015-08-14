@@ -196,4 +196,12 @@ public class ServiceController {
 		return "WorkerForm";
 	}
 	
+	@RequestMapping(value="admin.htm", method=RequestMethod.GET)
+	public String homePage1(Model model)
+	{	
+		System.out.println("Hello");
+		return "AdminIndex";
+	}
+	
+	
 }

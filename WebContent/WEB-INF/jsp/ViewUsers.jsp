@@ -20,7 +20,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Register</title>
+    <title>View Users</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +59,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-              		  <li><a href="viewuser.htm">View All Users</a></li>    
+              		      <li><a href="viewuser.htm">View All Users</a></li>
                     <li>
                     	<a href="newWorkerform.htm">Add Worker</a>
                     	</li>
@@ -91,40 +91,18 @@
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
+		<th>Email</th>
 		<th>Contact Number</th>
-		<th>Catgeory</th>
 		<th>Sex</th>
-		<th>DOB</th>
-		<th>Experience</th>
-		<th>StartDate</th>
-		<th>End Date</th>
-		<th>Ranking</th>
-		<th>StartTimme</th>
-		<th>EndTime</th>
-		<th>Availability</th>
-		<th>Wage</th>
-		<th>Image</th>
 	</tr>
 	<c:forEach items="${wlist }" var="w">
 	<form action="viewbookingform.htm" method="get">
 	<tr>
-		<td>${w.worker_id }</td>
-		<td>${w.worker_name }</td>
-		<td>${w.worker_contact_no }</td>
-		<td>${w.worker_category }</td>
-		<td>${w.worker_sex }</td>
-		<td>${w.worker_dob }</td>
-		<td>${w.worker_exp }</td>
-		<td>${w.worker_startdate }</td>
-		<td>${w.worker_enddate }</td>
-		<td>${w.worker_ranking }</td>
-		<td>${w.worker_starttime }</td>
-		<td>${w.worker_endtime }</td>
-		<td>${w.worker_avail }</td>
-		<td>${w.worker_rent }</td>
-		<td>${w.worker_image }</td>
-		<%-- <td><fmt:formatDate value="${e.doj }" pattern="dd-MMM-yyyy"/></td> --%>
-		<td><button name="worker_id" value="${w.worker_id }" id="wid" onclick="view">BookNow</button></td>
+		<td>${w.user_id }</td>
+		<td>${w.full_name }</td>
+		<td>${w.email }</td>
+		<td>${w.contactno }</td>
+		<td>${w.sex }</td>
 	</tr>
 	</form>
 	</c:forEach>
