@@ -46,8 +46,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">ServiceSquare</a>
-                  <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="gohome.htm">ServiceSquare</a>
+                  <a class="navbar-brand" href="gohome.htm">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
