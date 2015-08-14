@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello, Admin</title>
+    <title>Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
     <section class="container">
 		<div class="container-page">				
 			<div class="col-md-6">
-				<h3 class="dark-grey">Registration</h3>
+				<h3 class="dark-grey">Hello Admin</h3>
 				
 			
 	</div>

@@ -82,12 +82,12 @@
     <section class="container">
 		<div class="container-page">				
 			<div class="col-md-6">
-				<h3 class="dark-grey">Worker Details</h3>
+				<h3 class="dark-grey">User Details</h3>
 				<hr>
 <c:if test="${sessionScope.vname ne null }">
 	
 
-	<table cellpadding="20" width="300%" bgcolor="#e7e7e7">
+	<table cellpadding="20" width="220%" bgcolor="#e7e7e7">
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
