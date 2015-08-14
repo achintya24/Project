@@ -205,9 +205,11 @@ public class DaoImpl implements DaoI {
 	}
 
 	@Override
-	public List<Map<String, Object>> viewUsers(String category) {
+	public List<Map<String, Object>> viewUsers() {
 		// TODO Auto-generated method stub
-		return null;
+		String sql="select * from user";
+		List<Map<String,Object>>lst=jtemp.queryForList(sql);
+		return lst;
 	}
 
 	

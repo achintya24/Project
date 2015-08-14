@@ -31,7 +31,7 @@ public interface DaoI {
 	 public Set<String> client_Worker(String Username);
 	public int fetchUser_id();
 	
-	public List<Map<String,Object>> viewUsers(String category);
+	public List<Map<String,Object>> viewUsers();
 		
 	public List<Map<String,Object>> viewWorkersByPrice(String category);
 	public List<Map<String,Object>> viewWorkersByExp(String category);

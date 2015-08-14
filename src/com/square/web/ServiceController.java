@@ -45,6 +45,14 @@ public class ServiceController {
 		model.addAttribute("user",new User());
 		return "AddFrm";
 	}
+	
+	@RequestMapping(value="viewuser.htm",method=RequestMethod.POST)
+	public String viewUsers(Model model){
+		List<Map<String, Object>> lst=dao.viewUsers();
+		model.addAttribute("wlist",lst);
+		return "ViewUsers";
+	}
+	
 	@RequestMapping(value="addclientdetails.htm", method=RequestMethod.POST)
 	public String addClientDetails(@ModelAttribute("user")User user,Model model)
 	{
