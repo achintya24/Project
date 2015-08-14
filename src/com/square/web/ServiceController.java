@@ -150,6 +150,7 @@ public class ServiceController {
 		model.addAttribute("user",new User());
 		return "reg";
 	}
+	
 	@RequestMapping(value="plumberfrm.htm", method=RequestMethod.GET)
 	public String newPlumberFrm(Model model)
 	{
@@ -157,6 +158,31 @@ public class ServiceController {
 		model.addAttribute("plumber",new Booking());
 		return "plumber";
 	}
+	
+	@RequestMapping(value="computerfrm.htm", method=RequestMethod.GET)
+	public String newComputerFrm(Model model)
+	{
+		
+		model.addAttribute("plumber",new Booking());
+		return "computer";
+	}
+	
+	@RequestMapping(value="housefrm.htm", method=RequestMethod.GET)
+	public String newHouseFrm(Model model)
+	{
+		
+		model.addAttribute("plumber",new Booking());
+		return "house";
+	}
+	
+	@RequestMapping(value="electricalfrm.htm", method=RequestMethod.GET)
+	public String newelectricalFrm(Model model)
+	{
+		
+		model.addAttribute("plumber",new Booking());
+		return "electrical";
+	}
+	
 	@RequestMapping(value="gohome.htm", method=RequestMethod.GET)
 	public String homePage(Model model)
 	{

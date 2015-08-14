@@ -120,10 +120,10 @@
 
 						<form:select class="form-control" path="locationid">
 							<form:option value="">Select Your City</form:option>
-							<form:option value="bangalore">Bangalore</form:option>
-							<form:option value="gurgaon">Gurgaon</form:option>
-							<form:option value="pune">Pune</form:option>
-							<form:option value="kolkata">Kolkata</form:option>
+							<form:option value="Bangalore">Bangalore</form:option>
+							<form:option value="Gurgaon">Gurgaon</form:option>
+							<form:option value="Pune">Pune</form:option>
+							<form:option value="Kolkata">Kolkata</form:option>
 						</form:select>
 					</div>
 					
@@ -131,10 +131,10 @@
 
 						<form:select class="form-control" path="category">
 							<form:option value="">What Service you need?</form:option>
-							<form:option value="Plumbing">Plumbing</form:option>
+							<form:option value="Plumber">Plumbing</form:option>
 							<form:option value="Electrical">Electrical</form:option>
 							<form:option value="Home Cleaning">House Cleaning</form:option>
-							<form:option value="ComputerRepair">Computer Repair</form:option>
+							<form:option value="Computer Repair">Computer Repair</form:option>
 						</form:select>
 					</div>
 
@@ -165,7 +165,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 text-center">
 					<div class="service-box">
-						<a href="electrical.html"
+						<a href="electricalfrm.htm"
 							style="color: black; text-decoration: none"><img
 							src="img/electrical.png">
 							<h3>Electrical</h3></a>
@@ -175,7 +175,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 text-center">
 					<div class="service-box">
-						<a href="house.html" style="color: black; text-decoration: none">
+						<a href="housefrm.htm" style="color: black; text-decoration: none">
 						<img src="img/house.png">
 							<h3>Home Cleaning</h3></a>
 
@@ -183,7 +183,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 text-center">
 					<div class="service-box">
-						<a href="computer.html"
+						<a href="computerfrm.htm"
 							style="color: black; text-decoration: none">
 							<img src="img/computer.png">
 							<h3>Computer Repair</h3></a>

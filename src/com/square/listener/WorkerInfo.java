@@ -31,22 +31,38 @@ public class WorkerInfo extends HttpServlet {
 		String str=request.getParameter("worker_id");
 		System.out.println(str);
 		String[] arr=str.split("-");
-		
+
 		if(arr[1].equals("Home Cleaning"))
 		{
 			GlobalClass.worker_id=Integer.parseInt(arr[0]);
 			GlobalClass.category=arr[1];
-			GlobalClass.cid=1;
-		String url=response.encodeRedirectURL("plumberfrm.htm");
-		response.sendRedirect("plumberfrm.htm");
+			GlobalClass.cid=2;
+			String url=response.encodeRedirectURL("housefrm.htm");
+			response.sendRedirect(url);
 		}
-		if(arr[1].equals("Plumber"))
+		if(arr[1].equals("Plumbing"))
 		{
 			GlobalClass.worker_id=Integer.parseInt(arr[0]);
 			GlobalClass.category=arr[1];
-			GlobalClass.cid=2;
-		String url=response.encodeRedirectURL("plumberfrm.htm");
-		response.sendRedirect("plumberfrm.htm");
+			GlobalClass.cid=1;
+			String url=response.encodeRedirectURL("plumberfrm.htm");
+			response.sendRedirect(url);
+		}
+		else if(arr[1].equals("Computer Repair"))
+		{
+			GlobalClass.worker_id=Integer.parseInt(arr[0]);
+			GlobalClass.category=arr[1];
+			GlobalClass.cid=4;
+			String url=response.encodeRedirectURL("computerfrm.htm");
+			response.sendRedirect(url);
+		}
+		else if(arr[1].equals("Electrical"))
+		{
+			GlobalClass.worker_id=Integer.parseInt(arr[0]);
+			GlobalClass.category=arr[1];
+			GlobalClass.cid=3;
+			String url=response.encodeRedirectURL("electicalfrm.htm");
+			response.sendRedirect(url);
 		}
 	}
 
