@@ -204,6 +204,12 @@ public class DaoImpl implements DaoI {
 		return lst;
 	}
 
+	@Override
+	public List<Map<String, Object>> viewUsers(String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 
 }

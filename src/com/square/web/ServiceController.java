@@ -192,7 +192,7 @@ public class ServiceController {
 	public String newWorkerForm(Model model)
 	{
 		//model.addAttribute("userrequest",new UserRequest());
-	model.addAttribute("worker1",new Worker());
+		model.addAttribute("worker1",new Worker());
 		return "WorkerForm";
 	}
 	

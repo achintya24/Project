@@ -30,6 +30,8 @@ public interface DaoI {
 	public List<Map<String,Object>> BookingDetails();
 	 public Set<String> client_Worker(String Username);
 	public int fetchUser_id();
+	
+	public List<Map<String,Object>> viewUsers(String category);
 		
 	public List<Map<String,Object>> viewWorkersByPrice(String category);
 	public List<Map<String,Object>> viewWorkersByExp(String category);
@@ -43,5 +45,4 @@ public interface DaoI {
 	public List<Map<String,Object>> viewByLocationAndCategory(String location, String category);
 	public void addFeedback(Feedback feedback);
 	public List<Map<String,Object>> viewAllFeedbacks();
-	
 }
