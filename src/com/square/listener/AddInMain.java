@@ -30,7 +30,7 @@ public class AddInMain extends HttpServlet {
 		int workerid=Integer.parseInt(request.getParameter("worker_id"));
 		UserUtil.addInMain(workerid);
 		String url=response.encodeRedirectURL("newworker.htm");
-		response.sendRedirect("newworker.htm");
+		response.sendRedirect(url);
 		
 	}
 

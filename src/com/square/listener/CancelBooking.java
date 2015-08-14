@@ -32,7 +32,7 @@ public class CancelBooking extends HttpServlet {
 		System.out.println(booking_id);
 		UserUtil.cancelBooking(booking_id);
 		String url=response.encodeRedirectURL("bookfrm.htm");
-		response.sendRedirect("bookfrm.htm");
+		response.sendRedirect(url);
 	}
 
 	

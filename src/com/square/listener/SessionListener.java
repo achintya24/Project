@@ -56,7 +56,7 @@ public class SessionListener extends HttpServlet {
 		GlobalClass.username=Username;
 		sess.setMaxInactiveInterval(10*60);
 		String url=response.encodeRedirectURL("indexfrm.htm");
-		response.sendRedirect("indexfrm.htm");
+		response.sendRedirect(url);
 	}
 
 	}
